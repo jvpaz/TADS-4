@@ -1,0 +1,8 @@
+body{
+    /*Background*/
+    background-image: url("Assets/Rectangle.png"); /* define a imagem de fundo */
+    background-repeat: no-repeat;  /* define se a imagem se repete */
+    background-size: 100% 100%;  /* define o tamanho */
+    background-position:bottom;  /* define a posição inicial */
+    background-attachment: fixed;  /* ??? */
+}
