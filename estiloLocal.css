@@ -1,0 +1,53 @@
+body{
+    background-image: url("Rectangle.png"); /* define a imagem de fundo */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position:bottom;
+    background-attachment: fixed;
+}
+
+.interior{
+width: 450px;
+height: 490px;
+float: left;
+position: relative;
+top: 10px;
+left: 200px;
+background-color: snow;
+/*border: 3px solid powderblue; */
+}
+
+
+a{
+    border: 2px solid black;
+    border-radius: 3px;
+}
+
+.imgs{
+    align-self: center;
+    height: 300px;
+    padding: 0 10px;
+}
+
+.tituloExterior{
+    clear: both;
+    position: absolute;
+    top: 640px;
+}
+
+.colExterior{
+    clear: both;
+    position: absolute;
+    top: 690px;
+}
+
+.exterior{
+    width: 480px;
+    height: 450px;
+    float: left;
+    background-color: snow;
+    position: relative;
+    top: 140px;
+    left: 140px;
+}
+
