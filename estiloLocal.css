@@ -1,53 +1,93 @@
 body{
-    background-image: url("Rectangle.png"); /* define a imagem de fundo */
-    background-repeat: no-repeat;
+    background-image: url("Rectangle.png");
     background-size: 100% 100%;
     background-position:bottom;
     background-attachment: fixed;
-}
-
-.interior{
-width: 450px;
-height: 490px;
-float: left;
-position: relative;
-top: 10px;
-left: 200px;
-background-color: snow;
-/*border: 3px solid powderblue; */
+    max-width: 1400px; /* Adicionei pois tinha problemas de zoom, sendo que a pagina só funcionava em 90% */
+    font-family: sans-serif;
 }
 
 
 a{
+    position: absolute;
     border: 2px solid black;
-    border-radius: 3px;
+    border-radius: 5px;
+    padding: 3 10px;
+    background-color: snow;
+}
+
+
+.tituloInterior{ /* Titulo e par adcionados para ficarem parecidos com suas contrapartes de exterior */
+    position: absolute;
+    top: 60px;
+    left: 45%;
+    border: 5px solid snow;
+    border-radius: 5px;
+    background-color: snow;
+}
+
+.parInt{
+    position: absolute;
+    top: 150px;
+    left: 5%;
+    right: 5%;
+    border: 5px solid snow;
+    border-radius: 5px;
+    background-color: snow;
+
+}
+
+.interior{
+width: 33%;
+height: 520px;
+float: left;
+position: relative;
+top: 200px;
+left: 50px;
+background-color: snow;
+text-align: center;
 }
 
 .imgs{
     align-self: center;
-    height: 300px;
-    padding: 0 10px;
+    height: 270px;
+    padding: 20 10px;
 }
 
 .tituloExterior{
     clear: both;
     position: absolute;
-    top: 640px;
+    top: 105%;
+    left: 45%;
+    border: 5px solid snow;
+    border-radius: 5px;
+    background-color: snow;
 }
 
-.colExterior{
+.parExt{
     clear: both;
     position: absolute;
-    top: 690px;
+    top: 122%;
+    left: 5%;
+    border: 5px solid snow;
+    border-radius: 5px;
+    background-color: snow;
 }
 
 .exterior{
-    width: 480px;
-    height: 450px;
+    width: 33%;
+    height: 500px;
     float: left;
     background-color: snow;
     position: relative;
-    top: 140px;
-    left: 140px;
+    top: 400px;
+    left: 50px;
+    text-align: center;
 }
 
+.rodape{ /* Rodape adicionado para criar mais espaço após as divs desse exterior */
+    width: 100%;
+    height: 500px;
+    float: left;
+    overflow: hidden;
+}
