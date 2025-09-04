@@ -38,26 +38,61 @@ a{
 }
 
 .interior{
-width: 33%;
-height: 520px;
-float: left;
-position: relative;
-top: 200px;
-left: 50px;
-background-color: snow;
-text-align: center;
+    width: 33%;
+    height: 520px;
+    float: left;
+    position: relative;
+    top: 200px;
+    left: 50px;
+    background-color: snow;
+    text-align: center;
+    overflow: hidden;
 }
 
-.imgs{
-    align-self: center;
-    height: 270px;
-    padding: 20 10px;
+.imgsI{
+    position: absolute;
+    top: 50px;
+    right: 5%;
+    width: 85%;
+    height: 50%;
+    padding: 10 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.imgsI:hover{
+    transform: scale(1.1);
+}
+
+.intHeadsA{
+    position: absolute;
+    top: 350px;
+    left: 35%;
+}
+
+.intHeads{
+    position: absolute;
+    top: 350px;
+    left: 20%;
+}
+
+.intHeadsB{
+    position: absolute;
+    top: 350px;
+    left: 40%;
+}
+
+.intP{
+    position: absolute;
+    top: 390px;
 }
 
 .tituloExterior{
     clear: both;
     position: absolute;
-    top: 105%;
+    top: 110%;
     left: 45%;
     border: 5px solid snow;
     border-radius: 5px;
@@ -83,6 +118,48 @@ text-align: center;
     top: 400px;
     left: 50px;
     text-align: center;
+    overflow: hidden;
+}
+
+
+.imgsII{
+    position: absolute;
+    top: 50px;
+    right: 5%;
+    width: 85%;
+    height: 50%;
+    padding: 10 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px;
+    transition: transform 0.4s ease;
+}
+
+.imgsII:hover{ /* Faz com que imagens de interior/exterior sejam projetadas, junto de transition na classe original */
+    transform: scale(1.1);
+}
+
+
+.extHeadsP{
+    position: absolute;
+    top: 350px;
+    left: 46%;
+}
+
+.extHeadsR{
+    position: absolute;
+    top: 350px;
+    left: 43%;
+}
+
+.extHeadsQ{
+    position: absolute;
+    top: 350px;
+    left: 33%;
+}
+
+.extP{
+    position: absolute;
+    top: 390px;
 }
 
 .rodape{ /* Rodape adicionado para criar mais espaço após as divs desse exterior */
