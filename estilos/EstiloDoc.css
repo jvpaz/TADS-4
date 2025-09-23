@@ -6,6 +6,17 @@ body{
     background-position:bottom;  /* define a posição inicial */
     background-attachment: fixed;  /* ??? */
 }
+
+a{
+    position: absolute;
+    margin-top: 1.5%;
+    padding: 3 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: lightgray
+}
+
 /*div pai*/
 .menu{
     position: relative;
