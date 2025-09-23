@@ -75,10 +75,9 @@ body {
 }
 
 .conteudo .conteudo-imagens img {
-    width: 55%;
-    height: auto;
-    margin: 0 25%;
+    width: 80%;
+    height: 70%;
+    margin: 0 10%;
     margin-top: 10%;
     border-radius: 10px;
-    min-width: 20%;
 }
