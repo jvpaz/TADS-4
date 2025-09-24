@@ -1,10 +1,10 @@
 body {
     margin: 0;
     background-image: url("../assets/Rectangle.png");
-    background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: bottom;
     background-attachment: fixed;
+    background-repeat: repeat;
 }
 
 .conteudo {
@@ -12,72 +12,105 @@ body {
     width: 80%;
     height: 100%;
     margin: 0 10%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .conteudo .conteudo-nav {
-    width: 100%;
+    width: 70%;
     height: 15%;
+    float: left;
+    border-bottom: 1px solid gray;
+    background-color: #07335a;
+    border-end-end-radius: 5px;
+}
+
+.conteudo .conteudo-nav .nav-interior
+{
     display: flex;
-    justify-content: center;
-    align-items: center;
+}
+
+.conteudo .conteudo-nav img
+{
+    width: 10%;
+    height: auto;
+    padding: 0 10px;
 }
 
 .conteudo .conteudo-nav .texto-destaque {
-    font-family: sans-serif;
-    background-color: #F0E5CF;
-    padding: 5px 15px;
-    margin: 5px;
-    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+    font-size: larger;
+    border-radius: 5px;
+    color: white;
+    
 }
 
 .conteudo .conteudo-nav .nav-links {
     display: flex;
+    width: 50%;
     justify-content: space-evenly;
+    align-items:end;
 }
 
 .conteudo .conteudo-nav .nav-links a {
     text-decoration: none;
-    font-family: sans-serif;
-    color: black;
-    font-weight: bold;
-    background-color: #F0E5CF;
-    border-radius: 10px;
-    padding: 5px 15px;
+    font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+    border-radius: 5px;
+    color: white;
+  text-decoration: none;
+  margin-right: 15px;
+  font-weight: bold;
 }
 
 .conteudo .conteudo-nav .nav-links a:hover {
-    background-color: #F0E5CF
+    background-color: #F0E5CF;
+    color: black;
 }
 
 .conteudo .conteudo-texto {
     float: left;
     height: 85%;
-    width: 60%;
+    width: 70%;
 }
 
 .conteudo .conteudo-texto p {
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
     text-align: left;
     margin: 15px 10px;
     margin-right: 20px;
     word-spacing: 5px;
     line-height: 1.2;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.conteudo .conteudo-texto img
+{
+    width: 30%;
+    height: auto;
+    margin-left: 10%;
+    border: 1px solid gray;
+    border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 .conteudo .conteudo-imagens {
     float: right;
-    height: 85%;
-    width: 40%;
-    background-color: #F0E5CF;
+    height: 100%;
+    width: 30%;
     display: grid;
     justify-content: center;
     border-top-left-radius: 10px;
 }
 
 .conteudo .conteudo-imagens img {
-    width: 80%;
-    height: 70%;
-    margin: 0 10%;
+    width: 60%;
+    height: auto;
+    margin: 0 12.5%;
     margin-top: 10%;
-    border-radius: 10px;
+    border: 1px gray solid;
+    border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
