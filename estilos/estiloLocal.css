@@ -3,38 +3,149 @@ body{
     background-size: 100% 100%;
     background-position:bottom;
     background-attachment: fixed;
-    max-width: 1400px; /* Adicionei pois tinha problemas de zoom, sendo que a pagina só funcionava em 90% */
+    max-width: 1400px;
     font-family: sans-serif;
 }
 
+/* códigos .menu até .ALink do menu dos locais para navegação entre páginas */
 
-a{
+.menu{
+    padding: 0 60px;
+    height: 9%;
+    width: 92.05%;
+    margin: 0;
+    top: 0;
+    left: 0px;
+    background-color: slateblue;
     position: absolute;
-    border: 2px solid black;
-    border-radius: 5px;
-    padding: 3 10px;
-    background-color: snow;
+    float: left;
+    overflow-y: none;
+}
+
+.menu li{
+    position: relative;
+    float: left;
+    top: 10px;
+    left: 20%;
+    margin: auto 20px;
+    width: 110px;
+    color:#ffffff;
+    list-style: none;
+}
+
+.menu .LogoLi{
+    position: absolute;
+    float: left;
+    top: 25px;
+    left: 22%;
+    width: 110px;
+    color:#ffffff;
+    list-style: none;
+}
+
+.LogoLi p{
+    position: relative;
+    width: 240%;
+    right: 250%;
+    bottom: 20px;
+}
+
+li .links {
+    display: block;
+    padding: 10px;
+    color: #ffffff;
+    text-decoration: none;
+    width: 90%;
+    bottom: 10px;
+}
+
+li .links:hover{
+    background-color: #ffffff;
+    color: black;
+    border-radius: 30px;
+    border-width: 2%;
+    border-radius: 10px;
+    transition: background-color 5ms ease;
+}
+
+.logo{
+    position: absolute;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 20px;
+    width: 60px;
+    right: 360%;
+    top: -15px;
+    text-decoration: none;
+}
+
+
+alt{    /* descrição para o logo do colégio */
+    position: absolute;
+    right: 5%;
+    top: 0px;
+    white-space: nowrap;
+}
+
+
+.links, menu .primeiroLi,
+menu .segundoLi,
+menu .terceiroLi {
+    text-decoration: none;
+    color:#ffffff;
+    padding: 5px;
+    position: relative;
+}
+
+
+.links:hover {
+    color: black;
+}
+
+
+.ALink{
+    position: absolute;
+    float: left;
+    width: 150px;
+    top: 9%;
+    left: 0%;
+    color:#ffffff;
+    list-style: none;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: slateblue;
+}
+
+
+.ALink:hover{
+    background-color: #ffffff;
+    color: black;
+    border-width: 10%;
+    transition: background-color 5ms ease;
 }
 
 
 .tituloInterior{ /* Titulo e par adcionados para ficarem parecidos com suas contrapartes de exterior */
     position: absolute;
-    top: 60px;
-    left: 45%;
-    border: 5px solid snow;
+    top: 100px;
+    left: 42%;
+    width: 15%;
+    text-align: center;
+    border: 2px solid black;
     border-radius: 5px;
     background-color: snow;
 }
 
 .parInt{
-    position: absolute;
-    top: 150px;
+    position: relative;
+    top: 180px;
     left: 5%;
     right: 5%;
-    border: 5px solid snow;
+    max-width: 75%;
+    border: 2px solid black;
     border-radius: 5px;
     background-color: snow;
-
+    text-align: center;
 }
 
 .interior{
@@ -92,9 +203,11 @@ a{
 .tituloExterior{
     clear: both;
     position: absolute;
-    top: 110%;
-    left: 45%;
-    border: 5px solid snow;
+    width: 15%;
+    top: 115%;
+    left: 40%;
+    text-align: center;
+    border: 2px solid black;
     border-radius: 5px;
     background-color: snow;
 }
@@ -102,11 +215,12 @@ a{
 .parExt{
     clear: both;
     position: absolute;
-    top: 122%;
+    top: 126%;
     left: 5%;
-    border: 5px solid snow;
+    border: 2px solid black;
     border-radius: 5px;
     background-color: snow;
+    text-align: center;
 }
 
 .exterior{
@@ -163,8 +277,13 @@ a{
 }
 
 .rodape{ /* Rodape adicionado para criar mais espaço após as divs desse exterior */
-    width: 100%;
-    height: 500px;
+    position: relative;
+    width: 108%;
+    top: 80%;
+    height: 45px;
     float: left;
+    right: 8px;
     overflow: hidden;
+    background-color: springgreen;
+    text-align: center;
 }
