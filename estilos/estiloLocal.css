@@ -1,5 +1,5 @@
 body{
-    background-image: url("../assets/Rectangle.png");
+    background-image: url("Rectangle.png");
     background-size: 100% 100%;
     background-position:bottom;
     background-attachment: fixed;
@@ -7,7 +7,7 @@ body{
     font-family: sans-serif;
 }
 
-/* códigos .menu até .ALink do menu dos locais para navegação entre páginas */
+/* códigos .menu até .ALink do menu dos locais para navegar entre as páginas */
 
 .menu{
     padding: 0 60px;
@@ -80,10 +80,12 @@ li .links:hover{
 }
 
 
-alt{    /* descrição para o logo do colégio */
+.altP{    /* descrição para o logo do colégio */
     position: absolute;
+    top: -15px;
     right: 5%;
-    top: 0px;
+    font-size: small;
+    font-style: italic;
     white-space: nowrap;
 }
 
@@ -103,17 +105,23 @@ menu .terceiroLi {
 }
 
 
+/* Link para voltar ao inicio */ 
 .ALink{
-    position: absolute;
+    position: fixed;
     float: left;
-    width: 150px;
-    top: 9%;
-    left: 0%;
+    width: 160px;
+    height: 25px;
+    top: 90%;
+    padding-top: 5px;
+    left: 88%;
+    z-index: 10;
+    border-radius: 10px;
     color:#ffffff;
     list-style: none;
     text-decoration: none;
+    text-align: center;
     white-space: nowrap;
-    background-color: slateblue;
+    background-color: orangered;
 }
 
 
@@ -158,6 +166,7 @@ menu .terceiroLi {
     background-color: snow;
     text-align: center;
     overflow: hidden;
+    z-index: 5;
 }
 
 .imgsI{
@@ -181,23 +190,27 @@ menu .terceiroLi {
     position: absolute;
     top: 350px;
     left: 35%;
+    font-style: italic;
 }
 
 .intHeads{
     position: absolute;
     top: 350px;
     left: 20%;
+    font-style: italic;
 }
 
 .intHeadsB{
     position: absolute;
     top: 350px;
     left: 40%;
+    font-style: italic;
 }
 
 .intP{
     position: absolute;
     top: 390px;
+    font-style: italic;
 }
 
 .tituloExterior{
@@ -229,10 +242,11 @@ menu .terceiroLi {
     float: left;
     background-color: snow;
     position: relative;
-    top: 400px;
+    top: 440px;
     left: 50px;
     text-align: center;
     overflow: hidden;
+    z-index: 5;
 }
 
 
@@ -257,23 +271,28 @@ menu .terceiroLi {
     position: absolute;
     top: 350px;
     left: 46%;
+    font-style: italic;
 }
 
 .extHeadsR{
     position: absolute;
     top: 350px;
     left: 43%;
+    font-style: italic;
+
 }
 
 .extHeadsQ{
     position: absolute;
     top: 350px;
     left: 33%;
+    font-style: italic;
 }
 
 .extP{
     position: absolute;
     top: 390px;
+    font-style: italic;
 }
 
 .rodape{ /* Rodape adicionado para criar mais espaço após as divs desse exterior */
