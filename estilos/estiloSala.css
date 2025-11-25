@@ -136,6 +136,7 @@ button{
     left: 10%;
     background-color: orange;
     border: 5px solid orange;
+    cursor: pointer;
 }
 
 .imgsI{
