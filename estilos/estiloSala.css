@@ -1,5 +1,5 @@
 body{
-    background-image: url("Rectangle.png");
+    background-image: url("../assets/Rectangle.png");
     background-size: 100% 100%;
     background-position:bottom;
     background-attachment: fixed;
