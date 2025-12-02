@@ -134,9 +134,9 @@ img{
 button{
     position: relative;
     left: 10%;
+    cursor: pointer;
     background-color: orange;
     border: 5px solid orange;
-    cursor: pointer;
 }
 
 .imgsI{
