@@ -306,6 +306,10 @@ menu .terceiroLi {
     right: 8px;
     float: left;
     overflow: hidden;
-    background-color: springgreen;
+    background-color: blue;
     text-align: center;
+}
+
+.rodape p{
+    color: snow;
 }
