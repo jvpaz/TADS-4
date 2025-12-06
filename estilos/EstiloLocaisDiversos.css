@@ -8,17 +8,22 @@ body{
     font-family: sans-serif;
 }
 
+
 .menu{
-    padding: 0 60px;
-    height: 9%;
-    width: 92.05%;
-    margin: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin-left: auto;
+    width: auto;
+    height: auto;
+    width: 94.35%;
+    height: 8%;
     top: 0;
-    left: 0px;
-    background-color: slateblue;
+    padding: 0 60px;
+    background-color: blue;
     position: absolute;
     float: left;
-    overflow-x: none;
+    overflow-y: none;
 }
 
 
@@ -36,7 +41,7 @@ body{
 .menu .LiLink{
     position: relative;
     float: left;
-    top: 8px;
+    top: 20px;
     left: 0%;
     margin: auto 20px;
     width: 110px;
@@ -67,17 +72,16 @@ li .links:hover{
     position: absolute;
     font-weight: bold;
     color: #ffffff;
-    font-size: 20px;
     width: 60px;
-    left: 190%;
-    top: -15px;
+    left: 500px;
+    top: -10px;
     text-decoration: none;
 }
 
 .altP{
     position: absolute;
-    left: 260%;
-    top: 0px;
+    left: 600px;
+    top: 8px;
     font-size: medium;
     font-style: italic;
     white-space: nowrap;
@@ -109,7 +113,7 @@ li .links:hover{
 }
 
 
-.H2sala{
+.sala h2{
     text-align: center;
     background-color: yellow;
 }
@@ -163,10 +167,10 @@ p{
 
 
 .Pdesc-1{
-    top: 4%;
+    bottom: 13.5%;
     width: 35%;
     height: 14%;
-    left: 35%;
+    left: 60%;
     font-size: 14px;
     background-color: steelblue;
     border: 4px solid black;
@@ -176,16 +180,17 @@ p{
 
 .rodape{
     position: relative;
-    width: 108%;
+    width: 162.1%;
     top: 200%;
     height: 45px;
     float: left;
     right: 8px;
     overflow: hidden;
-    background-color: springgreen;
+    background-color: blue;
 }
 
 .rodapeP{
     position: absolute;
     left: 45%;
+    color: snow;
 }
