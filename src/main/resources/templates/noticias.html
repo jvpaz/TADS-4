@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Notícias</title>
+</head>
+<body>
+    <h1>Notícias</h1>
+
+    <div th:each="noticia : ${noticias}">
+        <h2 th:text="${noticia.titulo}"></h2>
+        <p th:text="${noticia.descricaoCurta}"></p>
+        <img th:src="${noticia.imagemThumb}" alt="Thumbnail" width="200">
+        <p th:text="${noticia.dataPublicacao}"></p>
+    </div>
+//Páginas de Testes pra ver quais informações tão vindo do banco de dados
+</body>
+</html>
