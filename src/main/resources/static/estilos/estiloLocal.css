@@ -10,16 +10,12 @@ body{
 /* códigos .menu até .ALink do menu dos locais para navegar entre as páginas */
 
 .menu{
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-right: auto;
-    margin-left: auto;
-    width: auto;
-    height: auto;
-    width: 94.35%;
-    height: 8%;
-    top: 0;
     padding: 0 60px;
+    height: 9%;
+    width: 92.05%;
+    margin: 0;
+    top: 0;
+    left: 0px;
     background-color: blue;
     position: absolute;
     float: left;
@@ -29,10 +25,10 @@ body{
 .menu li{
     position: relative;
     float: left;
-    top: 15px;
-    left: 25%;
+    top: 10px;
+    left: 20%;
     margin: auto 20px;
-    width: 150px;
+    width: 110px;
     color:#ffffff;
     list-style: none;
 }
@@ -40,15 +36,16 @@ body{
 .menu .LogoLi{
     position: absolute;
     float: left;
-    top: 35px;
+    top: 25px;
     left: 22%;
-    width: 150px;
+    width: 110px;
     color:#ffffff;
     list-style: none;
 }
 
 .LogoLi p{
     position: relative;
+    width: 240%;
     right: 250%;
     bottom: 20px;
 }
@@ -58,7 +55,7 @@ li .links {
     padding: 10px;
     color: #ffffff;
     text-decoration: none;
-    width: 70%;
+    width: 90%;
     bottom: 10px;
 }
 
@@ -76,9 +73,9 @@ li .links:hover{
     font-weight: bold;
     color: #ffffff;
     font-size: 20px;
-    width: 90px;
+    width: 60px;
     right: 360%;
-    bottom: 5px;
+    top: -15px;
     text-decoration: none;
 }
 
@@ -87,7 +84,7 @@ li .links:hover{
     position: absolute;
     top: -15px;
     right: 5%;
-    font-size:  medium;
+    font-size: small;
     font-style: italic;
     white-space: nowrap;
 }
@@ -138,7 +135,7 @@ menu .terceiroLi {
 
 .tituloInterior{ /* Titulo e par adcionados para ficarem parecidos com suas contrapartes de exterior */
     position: absolute;
-    top: 140px;
+    top: 100px;
     left: 42%;
     width: 15%;
     text-align: center;
@@ -149,8 +146,8 @@ menu .terceiroLi {
 
 .parInt{
     position: relative;
-    top: 210px;
-    left: 40%;
+    top: 180px;
+    left: 5%;
     right: 5%;
     max-width: 75%;
     border: 2px solid black;
@@ -164,8 +161,8 @@ menu .terceiroLi {
     height: 520px;
     float: left;
     position: relative;
-    top: 240px;
-    left: 300px;
+    top: 200px;
+    left: 50px;
     background-color: snow;
     text-align: center;
     overflow: hidden;
@@ -218,10 +215,10 @@ menu .terceiroLi {
 
 .tituloExterior{
     clear: both;
-    position: relative;
-    width: 25%;
-    top: 320px;
-    left: 65%;
+    position: absolute;
+    width: 15%;
+    top: 115%;
+    left: 40%;
     text-align: center;
     border: 2px solid black;
     border-radius: 5px;
@@ -230,9 +227,10 @@ menu .terceiroLi {
 
 .parExt{
     clear: both;
-    position: absolute;
-    top: 85%;
-    left: 20%;
+    position: relative;
+    top: 56%;
+    left: 5%;
+    width: 90%;
     border: 2px solid black;
     border-radius: 5px;
     background-color: snow;
@@ -245,8 +243,8 @@ menu .terceiroLi {
     float: left;
     background-color: snow;
     position: relative;
-    top: 420px;
-    left: 300px;
+    top: 440px;
+    left: 50px;
     text-align: center;
     overflow: hidden;
     z-index: 5;
@@ -300,16 +298,10 @@ menu .terceiroLi {
 
 .rodape{ /* Rodape adicionado para criar mais espaço após as divs desse exterior */
     position: relative;
-    width: 162.1%;
+    width: 108%;
     top: 60%;
     height: 45px;
-    right: 8px;
     float: left;
+    right: 8px;
     overflow: hidden;
-    background-color: blue;
-    text-align: center;
-}
-
-.rodape p{
-    color: snow;
 }
