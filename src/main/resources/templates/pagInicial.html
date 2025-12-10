@@ -10,7 +10,7 @@
     
     <header>
         <div class="logo">
-            <img src="../static/assets/BandRS.jpg" alt="">
+            <img th:src="@{/assets/BandRS.jpg}" alt="">
             <h1>Escola Nome Template</h1>
         </div>
         <nav>
@@ -24,7 +24,6 @@
         <div class="hero-text">
             <h1>Educação que transforma vidas</h1>
             <p>Uma escola focada no futuro dos nossos alunos, com ensino de qualidade e tecnologia.</p>
-            <a href="#" class="btn">Saiba Mais</a>
         </div>
     </section>
 
@@ -55,11 +54,18 @@
 
     <section class="noticias">
         <h2>Notícias</h2>
-        <div th:each="noticia : ${noticias}">
-        <img th:src="${noticia.imagemThumb}" alt="Thumbnail" width="200">
-        <h2 th:text="${noticia.titulo}"></h2>
-        <p th:text="${noticia.descricaoCurta}"></p>
-        <p th:text="${noticia.dataPublicacao}"></p>
+        <div class="cards">
+
+        <div class="card_noticia" th:each="noticia : ${noticias}">
+        <div class="card_noticia_image">
+        <p class="dataFormatada" th:text="${#temporals.format(noticia.dataPublicacao, 'yyyy-MM')}"></p>
+        <img th:src="${noticia.imagemThumb}" alt="Thumbnail noticia" width="280" height="220">
+        </div>
+           <h2 th:text="${noticia.titulo}"></h2>
+        <details>
+            <summary></summary>
+            <p th:text="${noticia.descricaoCurta}"></p></details>   
+        </div>
     </div>
     </section>
 

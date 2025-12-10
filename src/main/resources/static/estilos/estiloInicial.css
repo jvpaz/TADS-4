@@ -111,8 +111,37 @@ header nav a:hover {
 
 .noticias
 {
-    text-align: center;
+	text-align: center;
+
 }
+
+.card_noticia
+{
+    background: white;
+    width: 280px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.card_noticia .card_noticia_image
+{
+    position: relative;
+    
+}
+
+.card_noticia .card_noticia_image .dataFormatada
+{
+    position: absolute;
+    color: black;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    padding: 3px;
+    border-radius: 3px;
+}
+
 
 .cards {
     display: flex;
@@ -134,7 +163,6 @@ header nav a:hover {
     margin-bottom: 10px;
 }
 
-/* Rodapé */
 footer {
     text-align: center;
     padding: 20px;
