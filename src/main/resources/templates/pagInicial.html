@@ -56,9 +56,9 @@
     <section class="noticias">
         <h2>Notícias</h2>
         <div th:each="noticia : ${noticias}">
+        <img th:src="${noticia.imagemThumb}" alt="Thumbnail" width="200">
         <h2 th:text="${noticia.titulo}"></h2>
         <p th:text="${noticia.descricaoCurta}"></p>
-        <img th:src="${noticia.imagemThumb}" alt="Thumbnail" width="200">
         <p th:text="${noticia.dataPublicacao}"></p>
     </div>
     </section>
