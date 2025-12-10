@@ -1,42 +1,71 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escola Futuro Brilhante</title>
     <link rel="stylesheet" href="../static/estilos/estiloInicial.css">
 </head>
-
 <body>
-    <div class="conteudo">
-        <header class="conteudo-nav">
-            <nav class="nav-interior">
-                <img src="../static/assets/logo.png" alt="">
-                <h1 class="texto-destaque">Escola <br>Nome Template</h1>
-                <div class="nav-links">
-                    <a href="corpoDocente.html">Corpo</a>
-                    <a href="pagLocal.html">Locais</a>
-                </div>
-            </nav>
-        </header>
-        <div class="conteudo-imagens">
-            <img src="../static/assets/imagem3-1.webp" alt="">
-            <img src="../static/assets/imagem3-5.jpg" alt="">
-            <img src="../static/assets/imagem3-6.webp" alt="">
+    
+    <header>
+        <div class="logo">
+            <img src="../static/assets/BandRS.jpg" alt="">
+            <h1>Escola Nome Template</h1>
         </div>
-        <div class="conteudo-texto">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit obcaecati animi necessitatibus enim maiores
-                deserunt distinctio laborum mollitia eum delectus impedit repudiandae consequuntur quasi cum fuga
-                accusantium alias, facere omnis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-                deleniti deserunt nam quasi mollitia voluptatum eius impedit ullam eum eaque dicta, nesciunt quod!
-                Expedita nihil, maiores quas quasi error non.</p>
-            <img src="../static/assets/imagem3-2.JPG" alt="">
-            <img src="../static/assets/imagem3-4.webp" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, aliquid. Nesciunt, repellendus? Debitis
-                fuga totam autem perspiciatis ullam dolorem dicta voluptate corrupti laboriosam distinctio, molestias,
-                sit dolores eveniet harum fugit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem harum
-                quis corporis dolorum, in molestiae, assumenda atque hic consequatur amet unde, a itaque rerum cumque
-                natus quasi sapiente ratione minima?</p>
-        </div>
-    </div>
-</body>
+        <nav>
+            <a href="pagInicial.html">Início</a>
+            <a href="pagLocal.html">Locais</a>
+            <a href="corpoDocente.html">Corpo Docente</a>
+        </nav>
+    </header>
 
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Educação que transforma vidas</h1>
+            <p>Uma escola focada no futuro dos nossos alunos, com ensino de qualidade e tecnologia.</p>
+            <a href="#" class="btn">Saiba Mais</a>
+        </div>
+    </section>
+
+    <section class="sobre">
+        <h2>Sobre a Escola</h2>
+        <p>
+            A Escola Futuro Brilhante é dedicada a oferecer uma educação de qualidade, baseada em princípios éticos, inovação e desenvolvimento humano. Nossa missão é formar alunos capazes de pensar de maneira crítica, criativa e responsável, preparando-os para os desafios do mundo moderno.
+        </p>
+    </section>
+
+    <section class="servicos">
+        <h2>Nossos Diferenciais</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Ensino de Qualidade</h3>
+                <p>Educação moderna com foco no aprendizado real e no desenvolvimento de cada aluno.</p>
+            </div>
+            <div class="card">
+                <h3>Estrutura Completa</h3>
+                <p>Salas, laboratórios e espaços preparados para garantir conforto e segurança.</p>
+            </div>
+            <div class="card">
+                <h3>Formação Completa</h3>
+                <p>Trabalhamos conhecimento, valores e habilidades essenciais para a vida.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="noticias">
+        <h2>Notícias</h2>
+        <div th:each="noticia : ${noticias}">
+        <h2 th:text="${noticia.titulo}"></h2>
+        <p th:text="${noticia.descricaoCurta}"></p>
+        <img th:src="${noticia.imagemThumb}" alt="Thumbnail" width="200">
+        <p th:text="${noticia.dataPublicacao}"></p>
+    </div>
+    </section>
+
+    <footer>
+        <p>© 2025 IFSul - Todos os direitos reservados.</p>
+    </footer>
+
+</body>
 </html>
