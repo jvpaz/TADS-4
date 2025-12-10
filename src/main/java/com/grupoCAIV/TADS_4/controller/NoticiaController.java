@@ -21,6 +21,6 @@ public class NoticiaController {
 		List<NoticiaModel> noticias = noticiaRepository.findAll();
 		System.out.println(noticias);
 		model.addAttribute("noticias", noticias);
-		return "noticias"; // nome do arquivo Thymeleaf: noticias.html
+		return "pagInicial"; // nome do arquivo Thymeleaf: noticias.html
 	}
 }
