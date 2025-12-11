@@ -1,312 +1,72 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
 body{
-    background-image: url("../assets/Rectangle.png");
-    background-size: 100% 100%;
-    background-position:bottom;
-    background-attachment: fixed;
-    max-width: 1400px;
-    font-family: sans-serif;
+    background: url('../assets/imagemEscola2.webp') center/cover no-repeat;
 }
 
-/* códigos .menu até .ALink do menu dos locais para navegar entre as páginas */
-
-.menu{
-    padding: 0 60px;
-    height: 9%;
-    width: 92.05%;
-    margin: 0;
-    top: 0;
-    left: 0px;
-    background-color: blue;
-    position: absolute;
-    float: left;
-    overflow-y: none;
+.secao_item {
+    display: flex;
+    width: 100%;           
+    overflow: hidden; 
+    transition: transform 0.5s ease; 
 }
 
-.menu li{
-    position: relative;
-    float: left;
-    top: 10px;
-    left: 20%;
-    margin: auto 20px;
-    width: 110px;
-    color:#ffffff;
-    list-style: none;
+.item {
+    flex: 0 0 100%;        
+    box-sizing: border-box; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.menu .LogoLi{
-    position: absolute;
-    float: left;
-    top: 25px;
-    left: 22%;
-    width: 110px;
-    color:#ffffff;
-    list-style: none;
-}
 
-.LogoLi p{
-    position: relative;
-    width: 240%;
-    right: 250%;
-    bottom: 20px;
-}
-
-li .links {
-    display: block;
+.item_titulo{
+    color: white;
+    margin: 20px auto;
+    text-align: center;
+    width: 200px;
+    border-radius: 7px;
     padding: 10px;
-    color: #ffffff;
-    text-decoration: none;
-    width: 90%;
-    bottom: 10px;
+    background-color: #043980;
 }
 
-li .links:hover{
-    background-color: #ffffff;
-    color: black;
-    border-radius: 30px;
-    border-width: 2%;
-    border-radius: 10px;
-}
-
-.logo{
-    position: absolute;
+.item_descricao{
+    border-radius: 7px;
+    color: white;
     font-weight: bold;
-    color: #ffffff;
-    font-size: 20px;
-    width: 60px;
-    right: 360%;
-    top: -15px;
-    text-decoration: none;
+    margin: 20px auto;
+    width: 80vw;
+    text-align: center;
 }
 
-
-.altP{    /* descrição para o logo do colégio */
-    position: absolute;
-    top: -15px;
-    right: 5%;
-    font-size: small;
-    font-style: italic;
-    white-space: nowrap;
+.item_imagem{
+    width: 50vw;
+    height: 32vw;
+    border-radius: 7px;
 }
 
-
-.links, menu .primeiroLi,
-menu .segundoLi,
-menu .terceiroLi {
-    text-decoration: none;
-    color:#ffffff;
-    padding: 5px;
-    position: relative;
+.carrossel_botoes {
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
 
-.links:hover {
-    color: black;
-}
-
-
-/* Link para voltar ao inicio */
-.ALink{
-    position: fixed;
-    float: left;
-    width: 160px;
-    height: 25px;
-    top: 90%;
-    padding-top: 5px;
-    left: 88%;
-    z-index: 10;
+.carrossel_botoes button {
+    width: fit-content;
+    padding: 10px;
+    height: 40px;
+    border: none;
     border-radius: 10px;
-    color:#ffffff;
-    list-style: none;
-    text-decoration: none;
-    text-align: center;
-    white-space: nowrap;
-    background-color: orangered;
+    background: #043980;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
 }
 
-
-.ALink:hover{
-    background-color: #ffffff;
-    color: black;
-    border-width: 10%;
-    transition: background-color 5ms ease;
+.carrossel_botoes button:hover {
+    background: #0654bb;
 }
 
-
-.tituloInterior{ /* Titulo e par adcionados para ficarem parecidos com suas contrapartes de exterior */
-    position: absolute;
-    top: 100px;
-    left: 42%;
-    width: 15%;
-    text-align: center;
-    border: 2px solid black;
-    border-radius: 5px;
-    background-color: snow;
-}
-
-.parInt{
-    position: relative;
-    top: 180px;
-    left: 5%;
-    right: 5%;
-    max-width: 75%;
-    border: 2px solid black;
-    border-radius: 5px;
-    background-color: snow;
-    text-align: center;
-}
-
-.interior{
-    width: 33%;
-    height: 520px;
-    float: left;
-    position: relative;
-    top: 200px;
-    left: 50px;
-    background-color: snow;
-    text-align: center;
-    overflow: hidden;
-    z-index: 5;
-}
-
-.imgsI{
-    position: absolute;
-    top: 50px;
-    right: 5%;
-    width: 85%;
-    height: 50%;
-    padding: 10 10px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px;
-    object-fit: cover;
-    transition: transform 0.4s ease;
-}
-
-.imgsI:hover{
-    transform: scale(1.1);
-}
-
-.intHeadsA{
-    position: absolute;
-    top: 350px;
-    left: 35%;
-    font-style: italic;
-}
-
-.intHeads{
-    position: absolute;
-    top: 350px;
-    left: 20%;
-    font-style: italic;
-}
-
-.intHeadsB{
-    position: absolute;
-    top: 350px;
-    left: 40%;
-    font-style: italic;
-}
-
-.intP{
-    position: absolute;
-    top: 390px;
-    font-style: italic;
-}
-
-.tituloExterior{
-    clear: both;
-    position: absolute;
-    width: 15%;
-    top: 115%;
-    left: 40%;
-    text-align: center;
-    border: 2px solid black;
-    border-radius: 5px;
-    background-color: snow;
-}
-
-.parExt{
-    clear: both;
-    position: relative;
-    top: 56%;
-    left: 5%;
-    width: 90%;
-    border: 2px solid black;
-    border-radius: 5px;
-    background-color: snow;
-    text-align: center;
-}
-
-.exterior{
-    width: 33%;
-    height: 500px;
-    float: left;
-    background-color: snow;
-    position: relative;
-    top: 440px;
-    left: 50px;
-    text-align: center;
-    overflow: hidden;
-    z-index: 5;
-}
-
-
-.imgsII{
-    position: absolute;
-    top: 50px;
-    right: 5%;
-    width: 85%;
-    height: 50%;
-    padding: 10 10px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px;
-    transition: transform 0.4s ease;
-}
-
-.imgsII:hover{ /* Faz com que imagens de interior/exterior sejam projetadas, junto de transition na classe original */
-    transform: scale(1.1);
-}
-
-
-.extHeadsP{
-    position: absolute;
-    top: 350px;
-    left: 46%;
-    font-style: italic;
-}
-
-.extHeadsR{
-    position: absolute;
-    top: 350px;
-    left: 43%;
-    font-style: italic;
-
-}
-
-.extHeadsQ{
-    position: absolute;
-    top: 350px;
-    left: 33%;
-    font-style: italic;
-}
-
-.extP{
-    position: absolute;
-    top: 390px;
-    font-style: italic;
-}
-
-.rodape{ /* Rodape adicionado para criar mais espaço após as divs desse exterior */
-    position: relative;
-    width: 108%;
-    top: 60%;
-    height: 45px;
-    float: left;
-    right: 8px;
-    overflow: hidden;
+.carrossel_botoes button.active {
+    background: #0a7aff;
 }
