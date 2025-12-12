@@ -1,0 +1,39 @@
+body
+{
+    background: white;
+}
+
+.secao_itens
+{
+    display: flex;
+    padding: 50px;
+    flex-wrap: wrap;
+}
+
+.secao_itens article
+{
+    flex: 1 0 50vw;
+    padding-top: 50px;
+    font-size: 1.2em;
+}
+
+.secao_itens article p
+{
+    color: grey;
+    margin: 10px auto;
+}
+
+.secao_itens aside
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-evenly;
+    gap: 100px  ;
+}
+
+.secao_itens aside img
+{
+    width: 400px;
+    border-radius: 5px;
+}
