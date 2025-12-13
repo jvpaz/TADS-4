@@ -63,6 +63,15 @@ body
     overflow: hidden;
 }
 
+.card_noticia {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card_noticia:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
 .card_noticia h2
 {
 	font-size: 1.1em;
