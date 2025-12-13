@@ -16,12 +16,27 @@ public class NoticiaController {
 	@Autowired
 	private NoticiaRepository noticiaRepository;
 
-	@GetMapping("/noticias")
+	@GetMapping("/pagInicial")
 	public String listarNoticias(Model model) {
-		List<NoticiaModel> noticias = noticiaRepository.findAll();
+		List<NoticiaModel> noticias = noticiaRepository.findTop3ByOrderByDataPublicacaoDesc();
 		System.out.println(noticias);
 
 		model.addAttribute("noticias", noticias);
 		return "pagInicial"; // nome do arquivo Thymeleaf: noticias.html
+	}
+
+	@GetMapping("/pagLocal")
+	public String pagLocal() {
+		return "pagLocal"; // templates/pagLocal.html
+	}
+
+	@GetMapping("/corpoDocente")
+	public String corpoDocente() {
+		return "corpoDocente"; // templates/corpoDocente.html
+	}
+
+	@GetMapping("/sobreNos")
+	public String sobreNos() {
+		return "sobreNos"; // templates/sobreNos.html
 	}
 }

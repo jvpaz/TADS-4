@@ -1,161 +1,167 @@
-<HTML>
-    <head>
-        <meta charset="utf-8"/>
-        <link rel="stylesheet" href="../static/estilos/EstiloDoc.css"/>
-        <link rel="stylesheet" href="../static/estilos/style.css">
-    </head>
-    <body>
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" th:href="@{/estilos/EstiloDoc.css}"/>
+    <link rel="stylesheet" th:href="@{/estilos/style.css}"/>
+    <title>Corpo Docente</title>
+</head>
 
-        <header>
-        <div class="logo">
-            <img src="../static/assets/BandRS.jpg" alt="">
-            <h1>Escola Nome Template</h1>
-        </div>
-        <nav>
-            <a href="pagInicial.html">Início</a>
-            <a href="pagLocal.html">Locais</a>
-            <a href="corpoDocente.html">Corpo Docente</a>
-            <a href="sobreNos.html">Sobre Nós</a>
-        </nav>
-    </header>
+<body>
+
+<header>
+    <div class="logo">
+        <img th:src="@{/assets/BandRS.jpg}" alt="Logo Escola">
+        <h1>Escola Nome Template</h1>
+    </div>
+    <nav>
+        <a th:href="@{/pagInicial}">Início</a>
+        <a th:href="@{/pagLocal}">Locais</a>
+        <a th:href="@{/corpoDocente}">Corpo Docente</a>
+        <a th:href="@{/sobreNos}">Sobre Nós</a>
+    </nav>
+</header>
 
 <main>
-        <h2>Corpo Docente</h2>
-        <section class="menu">
+    <h2>Corpo Docente</h2>
 
-            <div class="item">
-                <img src="../static/assets/Profile.png" alt="pessoa1"> <!--Imagem menu-->
-                    <div class="sub-menu">
-                        <img src="../static/assets/Profile.png" alt="pessoa1"> <!--Imagem sub-menu-->
-                        <h3>NOME PROFESSOR</h3>
-                        <span>TEXTO DE PERFIL</span>
-                    </div>
-            </div>
+    <section class="menu">
 
-            <div class="item">
-                <img src="../static/assets/Profile.png" alt="pessoa2">
-                    <div class="sub-menu">
-                        <img src="../static/assets/Profile.png" alt="pessoa2">
-                        <h3>NOME PROFESSOR</h3>
-                        <span>TEXTO DE PERFIL</span>
 
-                    </div>
+        <div class="item">
+            <img th:src="@{/assets/Profile.png}" alt="pessoa1">
+            <div class="sub-menu">
+                <img th:src="@{/assets/Profile.png}" alt="pessoa1">
+                <h3>NOME PROFESSOR</h3>
+                <span>TEXTO DE PERFIL</span>
             </div>
+        </div>
 
-            <div class="item">
-                <img src="../static/assets/Profile.png" alt="pessoa3">
-                    <div class="sub-menu">
-                        <img src="../static/assets/Profile.png" alt="pessoa3">
-                        <h3>NOME PROFESSOR</h3>
-                        <span>TEXTO DE PERFIL</span>
-                    </div>
-            </div>
 
-            <div class="item">
-                <img src="../static/assets/Profile.png" alt="pessoa4">
-                    <div class="sub-menu">
-                        <img src="../static/assets/Profile.png" alt="pessoa4">
-                        <h3>NOME PROFESSOR</h3>
-                        <span>TEXTO DE PERFIL</span>
-                    </div>
+        <div class="item">
+            <img th:src="@{/assets/Profile.png}" alt="pessoa2">
+            <div class="sub-menu">
+                <img th:src="@{/assets/Profile.png}" alt="pessoa2">
+                <h3>NOME PROFESSOR</h3>
+                <span>TEXTO DE PERFIL</span>
             </div>
+        </div>
+        
+        <div class="item">
+            <img th:src="@{/assets/Profile.png}" alt="pessoa3">
+            <div class="sub-menu">
+                <img th:src="@{/assets/Profile.png}" alt="pessoa3">
+                <h3>NOME PROFESSOR</h3>
+                <span>TEXTO DE PERFIL</span>
+            </div>
+        </div>
+        
+        <div class="item">
+            <img th:src="@{/assets/Profile.png}" alt="pessoa4">
+            <div class="sub-menu">
+                <img th:src="@{/assets/Profile.png}" alt="pessoa4">
+                <h3>NOME PROFESSOR</h3>
+                <span>TEXTO DE PERFIL</span>
+            </div>
+        </div>
+        
+        <div class="item">
+            <img th:src="@{/assets/Profile.png}" alt="pessoa5">
+            <div class="sub-menu">
+                <img th:src="@{/assets/Profile.png}" alt="pessoa5">
+                <h3>NOME PROFESSOR</h3>
+                <span>TEXTO DE PERFIL</span>
+            </div>
+        </div>
+        
+        <div class="item">
+            <img th:src="@{/assets/Profile.png}" alt="pessoa6">
+            <div class="sub-menu">
+                <img th:src="@{/assets/Profile.png}" alt="pessoa6">
+                <h3>NOME PROFESSOR</h3>
+                <span>TEXTO DE PERFIL</span>
+            </div>
+        </div>
+        
+        <div class="item">
+            <img th:src="@{/assets/Profile.png}" alt="pessoa7">
+            <div class="sub-menu">
+                <img th:src="@{/assets/Profile.png}" alt="pessoa7">
+                <h3>NOME PROFESSOR</h3>
+                <span>TEXTO DE PERFIL</span>
+            </div>
+        </div>
+        
+        <div class="item">
+            <img th:src="@{/assets/Profile.png}" alt="pessoa8">
+            <div class="sub-menu">
+                <img th:src="@{/assets/Profile.png}" alt="pessoa8">
+                <h3>NOME PROFESSOR</h3>
+                <span>TEXTO DE PERFIL</span>
+            </div>
+        </div>
+        
+        <div class="item">
+            <img th:src="@{/assets/Profile.png}" alt="pessoa9">
+            <div class="sub-menu">
+                <img th:src="@{/assets/Profile.png}" alt="pessoa9">
+                <h3>NOME PROFESSOR</h3>
+                <span>TEXTO DE PERFIL</span>
+            </div>
+        </div>
+        
+        <div class="item">
+            <img th:src="@{/assets/Profile.png}" alt="pessoa10">
+            <div class="sub-menu">
+                <img th:src="@{/assets/Profile.png}" alt="pessoa10">
+                <h3>NOME PROFESSOR</h3>
+                <span>TEXTO DE PERFIL</span>
+            </div>
+        </div>
+        
+        <div class="item">
+            <img th:src="@{/assets/Profile.png}" alt="pessoa11">
+            <div class="sub-menu">
+                <img th:src="@{/assets/Profile.png}" alt="pessoa11">
+                <h3>NOME PROFESSOR</h3>
+                <span>TEXTO DE PERFIL</span>
+            </div>
+        </div>
+        
+        <div class="item">
+            <img th:src="@{/assets/Profile.png}" alt="pessoa12">
+            <div class="sub-menu">
+                <img th:src="@{/assets/Profile.png}" alt="pessoa12">
+                <h3>NOME PROFESSOR</h3>
+                <span>TEXTO DE PERFIL</span>
+            </div>
+        </div>
+        
+        <div class="item">
+            <img th:src="@{/assets/Profile.png}" alt="pessoa13">
+            <div class="sub-menu">
+                <img th:src="@{/assets/Profile.png}" alt="pessoa13">
+                <h3>NOME PROFESSOR</h3>
+                <span>TEXTO DE PERFIL</span>
+            </div>
+        </div>
+        
+        <div class="item">
+            <img th:src="@{/assets/Profile.png}" alt="pessoa14">
+            <div class="sub-menu">
+                <img th:src="@{/assets/Profile.png}" alt="pessoa14">
+                <h3>NOME PROFESSOR</h3>
+                <span>TEXTO DE PERFIL</span>
+            </div>
+        </div>
 
-            <div class="item">
-                <img src="../static/assets/Profile.png" alt="pessoa5">
-                    <div class="sub-menu">
-                        <img src="../static/assets/Profile.png" alt="pessoa5">
-                        <h3>NOME PROFESSOR</h3>
-                        <span>TEXTO DE PERFIL</span>
-                    </div>
-            </div>
 
-            <div class="item">
-                <img src="../static/assets/Profile.png" alt="pessoa6">
-                    <div class="sub-menu">
-                        <img src="../static/assets/Profile.png" alt="pessoa6">
-                        <h3>NOME PROFESSOR</h3>
-                        <span>TEXTO DE PERFIL</span>
-                    </div>
-            </div>
-
-            <div class="item">
-                <img src="../static/assets/Profile.png" alt="pessoa7">
-                    <div class="sub-menu">
-                        <img src="../static/assets/Profile.png" alt="pessoa7">
-                        <h3>NOME PROFESSOR</h3>
-                        <span>TEXTO DE PERFIL</span>
-                    </div>
-            </div>
-            
-            <div class="item">
-                <img src="../static/assets/Profile.png" alt="pessoa8">
-                    <div class="sub-menu">
-                        <img src="../static/assets/Profile.png" alt="pessoa8">
-                        <h3>NOME PROFESSOR</h3>
-                        <span>TEXTO DE PERFIL</span>
-                    </div>
-            </div>
-
-            <div class="item">
-                <img src="../static/assets/Profile.png" alt="pessoa9">
-                    <div class="sub-menu">
-                        <img src="../static/assets/Profile.png" alt="pessoa9">
-                        <h3>NOME PROFESSOR</h3>
-                        <span>TEXTO DE PERFIL</span>
-                    </div>
-            </div>
-
-            <div class="item">
-                <img src="../static/assets/Profile.png" alt="pessoa10">
-                    <div class="sub-menu">
-                        <img src="../static/assets/Profile.png" alt="pessoa10">
-                        <h3>NOME PROFESSOR</h3>
-                        <span>TEXTO DE PERFIL</span>
-                    </div>
-            </div>
-
-            <div class="item">
-                <img src="../static/assets/Profile.png" alt="pessoa11">
-                    <div class="sub-menu">
-                        <img src="../static/assets/Profile.png" alt="pessoa11">
-                        <h3>NOME PROFESSOR</h3>
-                        <span>TEXTO DE PERFIL</span>
-                    </div>
-            </div>
-
-            <div class="item">
-                <img src="../static/assets/Profile.png" alt="pessoa12">
-                    <div class="sub-menu">
-                        <img src="../static/assets/Profile.png" alt="pessoa12">
-                        <h3>NOME PROFESSOR</h3>
-                        <span>TEXTO DE PERFIL</span>
-                    </div>
-            </div>
-
-            <div class="item">
-                <img src="../static/assets/Profile.png" alt="pessoa13">
-                    <div class="sub-menu">
-                        <img src="../static/assets/Profile.png" alt="pessoa13">
-                        <h3>NOME PROFESSOR</h3>
-                        <span>TEXTO DE PERFIL</span>
-                    </div>
-            </div>
-
-            <div class="item">
-                <img src="../static/assets/Profile.png" alt="pessoa14">
-                    <div class="sub-menu">
-                        <img src="../static/assets/Profile.png" alt="pessoa14">
-                        <h3>NOME PROFESSOR</h3>
-                        <span>TEXTO DE PERFIL</span>
-                    </div>
-            </div>
-
-            </div>
-        </section>
+    </section>
 </main>
-        <footer>
-        <p>© 2025 IFSul - Todos os direitos reservados.</p>
-    </footer>
 
-    </body>
-</HTML>
+<footer>
+    <p>© 2025 IFSul - Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>

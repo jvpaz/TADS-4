@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Escola Futuro Brilhante</title>
-    <link rel="stylesheet" th:href="@{/estilos/estiloInicial.css}">
+    <title>Escola Nome</title>
     <link rel="stylesheet" th:href="@{/estilos/style.css}">
+    <link rel="stylesheet" th:href="@{/estilos/estiloInicial.css}">
 </head>
 <body>
     
@@ -15,11 +15,11 @@
             <h1>Escola Nome Template</h1>
         </div>
         <nav>
-            <a href="pagInicial.html">Início</a>
-            <a href="pagLocal.html">Locais</a>
-            <a href="corpoDocente.html">Corpo Docente</a>
-            <a href="sobreNos.html">Sobre Nós</a>
-        </nav>
+        <a th:href="@{/pagInicial}">Início</a>
+        <a th:href="@{/pagLocal}">Locais</a>
+        <a th:href="@{/corpoDocente}">Corpo Docente</a>
+        <a th:href="@{/sobreNos}">Sobre Nós</a>
+    </nav>
     </header>
 <main>
     <section class="hero">
@@ -54,22 +54,42 @@
         </div>
     </section>
 
-    <section class="noticias">
-        <h2>Notícias</h2>
-        <div class="cards">
+   <section class="noticias">
+    <h2>Notícias</h2>
+
+    <!-- Quando EXISTEM notícias -->
+    <div class="cards" th:if="${noticias != null and !#lists.isEmpty(noticias)}">
 
         <div class="card_noticia" th:each="noticia : ${noticias}">
-        <div class="card_noticia_image">
-        <p class="dataFormatada" th:text="${#temporals.format(noticia.dataPublicacao, 'yyyy-MM')}"></p>
-        <img th:src="${noticia.imagemThumb}" alt="Thumbnail noticia" width="280" height="220">
-        </div>
-           <h2 th:text="${noticia.titulo}"></h2>
-        <details>
-            <summary></summary>
-            <p th:text="${noticia.descricaoCurta}"></p></details>   
-        </div>
+    <div class="card_noticia_image">
+        <p class="dataFormatada"
+           th:text="${#temporals.format(noticia.dataPublicacao, 'yyyy-MM')}"></p>
+
+        <img th:src="${noticia.imagemThumb}"
+             alt="Thumbnail noticia"
+             width="280"
+             height="220">
     </div>
-    </section>
+
+    <h2 th:text="${noticia.titulo}"></h2>
+
+    <details class="detalhe-noticia">
+        <summary>Ler mais</summary>
+        <p th:text="${noticia.descricaoCurta}"></p>
+    </details>
+</div>
+
+
+    </div>
+
+    <!-- Quando NÃO EXISTEM notícias -->
+    <p class="sem-noticias"
+       th:if="${noticias == null or #lists.isEmpty(noticias)}">
+        Não há novas notícias no momento.
+    </p>
+
+</section>
+
 </main>
 
     <footer>

@@ -7,6 +7,19 @@
     color: white;
 }
 
+body
+{
+	background: white;
+}
+
+.sem-noticias {
+    text-align: center;
+    font-style: italic;
+    color: #666;
+    margin-top: 20px;
+}
+
+
 .hero-text h1 {
     font-size: 3em;
     margin-bottom: 10px;
@@ -50,10 +63,25 @@
     overflow: hidden;
 }
 
+.card_noticia h2
+{
+	font-size: 1.1em;
+}
+
 .card_noticia .card_noticia_image
 {
     position: relative;
     
+}
+
+.detalhe-noticia summary {
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.detalhe-noticia p {
+    padding: 10px;
+    margin-top: 5px;
 }
 
 .card_noticia .card_noticia_image .dataFormatada

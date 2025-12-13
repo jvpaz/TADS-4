@@ -1,56 +1,71 @@
-<html>
-    <head>
-<meta charset="utf-8"/>
-<link rel="stylesheet" href="../static/estilos/estiloLocal.css"/>
-<link rel="stylesheet" href="../static/estilos/style.css">
-<script src="../static/estilos/ScriptLocal.js"></script>
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8"/>
 
+    <link rel="stylesheet" th:href="@{/estilos/estiloLocal.css}"/>
+    <link rel="stylesheet" th:href="@{/estilos/style.css}"/>
+
+    <script th:src="@{/estilos/ScriptLocal.js}" defer></script>
+
+    <title>Locais</title>
 </head>
 
-    <body>
+<body>
 
-     <header>
-        <div class="logo">
-            <img src="../static/assets/BandRS.jpg" alt="">
-            <h1>Escola Nome Template</h1>
-        </div>
-        <nav>
-            <a href="pagInicial.html">Início</a>
-            <a href="pagLocal.html">Locais</a>
-            <a href="corpoDocente.html">Corpo Docente</a>
-            <a href="sobreNos.html">Sobre Nós</a>
-        </nav>
-    </header>
+<header>
+    <div class="logo">
+        <img th:src="@{/assets/BandRS.jpg}" alt="Logo Escola">
+        <h1>Escola Nome Template</h1>
+    </div>
+    <nav>
+        <a th:href="@{/pagInicial}">Início</a>
+        <a th:href="@{/pagLocal}">Locais</a>
+        <a th:href="@{/corpoDocente}">Corpo Docente</a>
+        <a th:href="@{/sobreNos}">Sobre Nós</a>
+    </nav>
+</header>
 
 <main>
+
 <section class="secao_item">
+
     <div class="item">
         <h2 class="item_titulo">Salas de Aula</h2>
-        <p class="item_descricao">Temos diversas salas de aula que turmas da manhã e tarde utilizam para
-realizar atividades escolares do dia a dia.</p>
-        <img class="item_imagem" src="../static/assets/imagem_sala.jpg" alt="">
+        <p class="item_descricao">
+            Temos diversas salas de aula que turmas da manhã e tarde utilizam para
+            realizar atividades escolares do dia a dia.
+        </p>
+        <img class="item_imagem" th:src="@{/assets/imagem_sala.jpg}" alt="Salas de Aula">
     </div>
 
     <div class="item">
         <h2 class="item_titulo">Quadra</h2>
-        <p class="item_descricao">A quadra é usada para aulas de educação física, jogos de basquete, futebol, vôlei
-e entre outros, contemplando vivência dos alunos com atividades físicas saudáveis</p>
-        <img class="item_imagem" src="../static/assets/imagem_quadra2.jpg" alt="">
+        <p class="item_descricao">
+            A quadra é usada para aulas de educação física, jogos de basquete, futebol,
+            vôlei e entre outros, contemplando vivência dos alunos com atividades físicas saudáveis.
+        </p>
+        <img class="item_imagem" th:src="@{/assets/imagem_quadra2.jpg}" alt="Quadra">
     </div>
 
     <div class="item">
         <h2 class="item_titulo">Laboratório</h2>
-        <p class="item_descricao">Nosso(s) laboratório(s) visam impulsionar primeiro contato dos alunos com informática e tecnologia,
-acaso não tenham em casa, podemos fornecer e ser exemplo para esses alunos que não tem oportunidade.</p>
-        <img class="item_imagem" src="../static/assets/imagem_laboratorio.JPG" alt="">
+        <p class="item_descricao">
+            Nosso(s) laboratório(s) visam impulsionar o primeiro contato dos alunos com informática
+            e tecnologia, fornecendo oportunidades para quem não tem acesso em casa.
+        </p>
+        <img class="item_imagem" th:src="@{/assets/imagem_laboratorio.JPG}" alt="Laboratório">
     </div>
 
     <div class="item">
         <h2 class="item_titulo">Biblioteca</h2>
-        <p class="item_descricao">Nossa biblioteca conta com acervo de vários livros diferentes com objetivo de chamar alunos para
-estimular suas habilidades de leitura e aprendizado para no futuro terem mente mais instigante</p>
-        <img class="item_imagem" src="../static/assets/imagem_biblioteca.jpeg" alt="">
+        <p class="item_descricao">
+            Nossa biblioteca conta com um acervo variado, estimulando a leitura e o
+            desenvolvimento intelectual dos alunos.
+        </p>
+        <img class="item_imagem" th:src="@{/assets/imagem_biblioteca.jpeg}" alt="Biblioteca">
     </div>
+
 </section>
 
 <div class="carrossel_botoes">
@@ -59,14 +74,12 @@ estimular suas habilidades de leitura e aprendizado para no futuro terem mente m
     <button data-slide="2">Laboratório</button>
     <button data-slide="3">Biblioteca</button>
 </div>
+
 </main>
 
+<footer>
+    <p>© 2025 IFSul - Todos os direitos reservados.</p>
+</footer>
 
-    
-
- <footer>
-        <p>© 2025 IFSul - Todos os direitos reservados.</p>
-    </footer>
-
-    </body>
+</body>
 </html>
